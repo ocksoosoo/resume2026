@@ -477,7 +477,7 @@ h1 {
 
 .about__deco-aster2 {
     position: absolute;
-    top: 105%; left: 78%;
+    top: 88%; left: 80%;
     width: 25px;
 }
 
@@ -489,7 +489,7 @@ h1 {
 
 .experience__deco-aster {
     position: absolute;
-    top: 1%; left: 33%;
+    top: -1.5%; left: 30%;
     width: 20px;
 }
 
@@ -537,4 +537,28 @@ h1 {
 
 .experience-year {
     font-weight: var(--font-weight-500);
+}
+
+
+.experience__image-container {
+    width: 100%; height: 490px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -5;
+}
+
+.experience__image-frame {
+    width: 200px;
+}
+
+.experience__image-container img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius-m);
 }
