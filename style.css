@@ -477,19 +477,20 @@ h1 {
 
 .about__deco-aster2 {
     position: absolute;
-    top: 88%; left: 80%;
+    top: 97%; left: 80%;
     width: 25px;
 }
 
 /* about2(experience) */
 #about2 {
     margin: var(--spacing-section) 0;
+    padding-top: 155px;
     position: relative;
 }
 
 .experience__deco-aster {
     position: absolute;
-    top: -14%; left: 32%;
+    top: 0; left: 32%;
     width: 20px;
 }
 
@@ -528,7 +529,7 @@ h1 {
     font-size: 2rem;
     font-weight: var(--font-weight-500);
     position: absolute;
-    top: -0.5%; right: -0.7%;
+    top: -0.7%; right: -0.7%;
 }
 
 .experience__contents {
@@ -541,15 +542,16 @@ h1 {
 
 
 .experience__image-container {
-    width: 100%; height: 490px;
+    width: 100%; height: 60%;
+    margin-top: 155px;
     display: flex;
+    gap: 4rem;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     align-content: space-between;
     position: absolute;
     top: 0; left: 0;
-    z-index: -5;
 }
 
 .experience__image-frame {
@@ -561,4 +563,25 @@ h1 {
     object-fit: cover;
     border: 2px solid var(--border-color);
     border-radius: var(--border-radius-m);
+    cursor: pointer;
+}
+
+.experience__image-container img:hover {
+    border-color: #e4e953;
+    transition: border-color 0.2s ease;
+}
+
+.experience__deco-aster2 {
+    width: 20px; height: 20px;
+}
+
+.about2__more {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.8rem;
+    position: absolute;
+    top: 90%; left: 45%;
+    color: var(--caption-color);
+    font-size: 0.8rem;
+
 }
