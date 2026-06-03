@@ -94,7 +94,7 @@
     --spacing-m: 1.5rem;
     --spacing-l: 2rem;
     --spacing-xl: 3rem;
-    --spacing-section: 4.5rem;
+    --spacing-section: 5rem;
 
     /* transition */
     --transition-bg: background-color 0.3s ease;
@@ -131,7 +131,7 @@ nav {
 }
 
 .nav {
-    width: 60%;
+    width: 40%;
     height: 50%;
     margin: 0 auto;
     background-color: var(--main-color);
@@ -158,10 +158,12 @@ nav {
     color: #fff;
 }
 
+#home, #about1, #about2 {
+    width: 100%; min-height: 800px;
+}
+
 /* main */
-main {
-    height: 800px;
-    margin: var(-spacing-section) 3rem;
+#home {
     position: relative;
 }
 
@@ -308,7 +310,7 @@ h1 {
 
 /* about me */
 #about1 {
-    margin-top: var(--spacing-section);
+    margin: var(--spacing-section) 0;
     position: relative;
 }
 
@@ -438,6 +440,7 @@ h1 {
 
 .skills__level {
     width: 70px; height: 70px;
+    font-size: 0.8rem;
     border: 2px solid var(--main-color);
     border-radius: 50%;
     display: flex;
@@ -470,4 +473,55 @@ h1 {
 
 .skills:hover {
     background-image: linear-gradient(0deg, #f2f2f2 70%, #ebeda2 90%, #e4e953 100%); 
+}
+
+.about__deco-aster2 {
+    position: absolute;
+    top: 105%; left: 78%;
+    width: 25px;
+}
+
+/* about2(experience) */
+#about2 {
+    margin: var(--spacing-section) 0;
+    position: relative;
+}
+
+.experience__deco-aster {
+    position: absolute;
+    top: 1%; left: 33%;
+    width: 20px;
+}
+
+.about__bg-card {
+    width: 470px; height: 470px;
+    margin: 0 auto;
+    border: 3px solid var(--border-color);
+    border-radius: var(--border-radius-m);
+    background-image: linear-gradient(135deg, #f2f2f2 30%, #ebeda2 70%, #e4e953 100%); 
+    position: relative;
+}
+
+.about__experience {
+    width: 400px; height: 400px;
+    background-color: var(--bg-color);
+    border: 3px solid var(--border-color);
+    border-radius: var(--border-radius-m);
+    padding: 0.5rem 1.5rem;
+    position: absolute;
+    top: 0.5%; left: 30%;
+}
+
+.about__experience h3 {
+    font-size: var(--font-h3-size);
+    font-weight: var(--font-weight-600);
+    margin-bottom: var(--spacing-m);
+}
+
+.experience__contents {
+    margin-bottom: var(--spacing-s);
+}
+
+.experience-year {
+    font-weight: var(--font-weight-500);
 }
