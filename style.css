@@ -385,7 +385,7 @@ h1 {
     min-width: 145px;
     border: 2px solid var(--border-color);
     border-radius: var(--border-radius-l);
-    padding: 0.25rem 1rem;
+    padding: 0.25rem;
     font-size: 18px;
 }
 
@@ -420,9 +420,10 @@ h1 {
 }
 
 .about__typo {
-    min-height: 180px;
+    height: 180px;
     text-align: center;
-    line-height: 180px;
+    display: flex;
+    align-items: center;
 }
 
 .about__typo:hover {
@@ -474,29 +475,36 @@ h1 {
     background-image: linear-gradient(0deg, #f8f9fa 70%, #ebeda2 90%, #e4e953 100%); 
 }
 
-.about__deco-aster2 {
-    position: absolute;
-    top: 107%; left: 80%;
-    width: 25px; height: 25px;
-}
+
 
 /* experience */
 #experience {
-    margin: var(--spacing-section) 0;
-    padding-top: 155px;
+    margin-bottom: var(--spacing-section);
     position: relative;
 }
 
+.deco-aster-group {
+    width: 100%; height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
-.experience__deco-aster {
-    position: absolute;
-    top: 0; left: 32%;
-    width: 20px;
+
+.deco-aster {
+    width: 20px; height: 20px;
+    align-self: flex-end;
+}
+
+.deco-aster2 {
+    width: 25px; height: 25px;
+    align-self: flex-start;
 }
 
 .experience__bg-card {
     width: 470px; height: 470px;
     margin: 0 auto;
+    transform: translateY(30%);
     border: 3px solid var(--border-color);
     border-radius: var(--border-radius-m);
     background-image: linear-gradient(0deg, #f2f2f2 0%, #ebeda2 30%, #e4e953 100%);
@@ -553,6 +561,7 @@ h1 {
     align-content: space-between;
     position: absolute;
     top: 0; left: 0;
+    z-index: -5;
 }
 
 .experience__image-frame {
@@ -770,7 +779,7 @@ footer p {
 /* ~1024px */
 @media (max-width: 1024px) {
 
-    #home, #about, #experience {
+    #home, #about, #experience, #works {
         padding: 0 var(--spacing-l);
     }
     
@@ -788,7 +797,20 @@ footer p {
     }
 
     /* about */
+    #about {
+        margin-bottom: var(--spacing-xl);
+    }
 
+    .keyword__list {
+        padding: 0.25rem;
+    }
+
+    /* experience */
+    .experience__bg-card {
+        transform: translateY(22%);
+    }
+
+    /* works */
 
 }
 
