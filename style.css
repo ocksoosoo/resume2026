@@ -122,7 +122,7 @@ a {
 body {
     background-color: var(--bg-color);
     color: var(--font-color);
-    max-width: 1000px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -159,7 +159,7 @@ nav {
     color: #fff;
 }
 
-#home, #about1, #experience {
+#home, #about, #experience {
     width: 100%; min-height: 800px;
 }
 
@@ -309,10 +309,13 @@ h1 {
     position: relative;
 }
 
-#about > :first-child {
+.about__title-container {
+    display: flex;
+    justify-content: center;
+}
+
+.about__deco-aster {
     width: 27px; height: 27px;
-    position: absolute;
-    top: 1%; left: 33.3%;
 }
 
 .about__title {
@@ -591,18 +594,20 @@ h1 {
     margin-bottom: var(--spacing-section);
 }
 
+.works__title-container {
+    display: flex;
+    justify-content: center;
+    margin-right: 3rem;
+}
+
 #works h2 {
     font-size: var(--font-h2-size);
     font-weight: var(--font-weight-600);
     letter-spacing: -0.4rem;
-    text-align: center;
 }
 
 .works__deco-aster {
-    width: 27px; height: 27px;
-    position: absolute;
-    top: 0; left: 37%;
-    
+    width: 27px; height: 27px;    
 }
 
 .worktogether span {
@@ -758,4 +763,41 @@ footer p {
     color: var(--caption-color);
     font-size: 12px;
     text-align: center;
+}
+
+
+/* 반응형 */
+/* ~1024px */
+@media (max-width: 1024px) {
+
+    #home, #about, #experience {
+        padding: 0 var(--spacing-l);
+    }
+    
+    /* #home */
+    .hero-container {
+        gap: var(--spacing-m);
+    }
+
+    .hero__icons {
+        width: 100%;
+    }
+
+    .hero__icons-me-container {
+        transform: none;
+    }
+
+    /* about */
+
+
+}
+
+/* 768px */
+@media (max-width: 768px) {
+
+}
+
+/* 320px */
+@media (max-width: 320px) {
+
 }
