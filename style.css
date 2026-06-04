@@ -592,6 +592,7 @@ h1 {
 
 #works {
     position: relative;
+    margin-bottom: var(--spacing-section);
 }
 
 #works h2 {
@@ -603,9 +604,9 @@ h1 {
 }
 
 .works__deco-aster {
-    width: 25px; height: 25px;
+    width: 27px; height: 27px;
     position: absolute;
-    top: 0; left: 0;
+    top: 0; left: 37%;
     
 }
 
@@ -615,7 +616,7 @@ h1 {
 
 .worktogether {
     position: absolute;
-    top: 13%; left: 67%;
+    top: 7%; left: 64%;
 }
 
 .worktogether > :first-child {
@@ -626,14 +627,18 @@ h1 {
 
 .worktogether > :first-child:hover {
     background-color: var(--main-color);
+    transition: background-color 0.3s ease;
+}
+.worktogether > :last-child:hover {
+    background-color: var(--main-color);
+    transition: background-color 0.3s ease;
 }
 
 .worktogether > :last-child {
     padding: 4px 6px;
-    background-color: var(--main-color);
     border: 3px solid var(--border-color);
-
 }
+
 
 .worktogether a {
     display: block;
@@ -643,7 +648,7 @@ h1 {
     width: 100%;
     display: grid;
     align-items: end;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: 1fr;
     grid-auto-rows: minmax(140px, auto);
 }
 
@@ -792,4 +797,14 @@ h1 {
     grid-row: 2 / 4;
     margin-bottom: 26px;
     margin-left: 8px;
+}
+
+footer {
+    padding: 2rem 0;
+}
+
+footer p {
+    color: var(--caption-color);
+    font-size: 12px;
+    text-align: center;
 }
