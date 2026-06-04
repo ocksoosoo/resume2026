@@ -68,7 +68,7 @@
     --font-color: #162002;
     --caption-color: #777;
     --bg-color: #f2f2f2;
-    --bg-gradient: linear-gradient(90deg, #f2f2f2 0%, #ebeda2 70%, #e4e953 100%); 
+    --box-color: #f8f9fa;
 
     /* font */
     --main-font: 'pretendard', 'noto-sans', sans-serif;
@@ -169,7 +169,7 @@ nav {
 
 .hero-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -211,13 +211,6 @@ h1 {
 }
 
 
-.home__right-arrow {
-    width: 15%;
-    text-align: center;
-    font-weight: var(--font-weight-600);
-    font-size: 2rem;
-}
-
 .hero__icons {
     width: 35%;
     padding: var(--spacing-l);
@@ -257,6 +250,7 @@ h1 {
 
 .me {
     background-color: var(--main-color);
+    position: relative;
     z-index: 10;
 }
 
@@ -354,7 +348,7 @@ h1 {
 .about__box {
     border: 3px solid var(--border-color);
     border-radius: var(--border-radius-m);
-    background-color: var(--bg-color);
+    background-color: var(--box-color);
     padding: 0.5rem 1rem;
 }
 
@@ -363,7 +357,7 @@ h1 {
 }
 
 .introduction:hover {
-    background-image: linear-gradient(0deg, #f2f2f2 70%, #ebeda2 90%, #e4e953 100%); 
+    background-image: linear-gradient(0deg, #f8f9fa 70%, #ebeda2 90%, #e4e953 100%); 
 
 }
 
@@ -392,7 +386,7 @@ h1 {
 }
 
 .keyword:hover {
-    background-image: linear-gradient(0deg, #f2f2f2 70%, #ebeda2 90%, #e4e953 100%); 
+    background-image: linear-gradient(0deg, #f8f9fa 70%, #ebeda2 90%, #e4e953 100%); 
 }
 
 .keyword__list li::before {
@@ -412,7 +406,7 @@ h1 {
     text-align: right;
     border: 3px solid var(--border-color);
     border-radius: var(--border-radius-m);
-    background-image: var(--bg-gradient);
+    background-image: linear-gradient(90deg, #f8f9fa 0%, #ebeda2 80%, #e4e953 100%); 
     margin-bottom: var(--spacing-s);
     padding: 0.125rem 0.5rem;
 }
@@ -428,7 +422,8 @@ h1 {
 }
 
 .about__typo:hover {
-    background-image: radial-gradient(circle at center, #e4e95e, #f2f2f2); 
+    color: var(--main-color);
+    transition: color 0.2s ease;
 }
 
 .skills__level-container {
@@ -448,16 +443,16 @@ h1 {
     justify-content: center;
     position: relative;
     
-    background: conic-gradient(#f2f2f2 var(--per), #e4e953 var(--per));
+    background: conic-gradient(#f8f9fa var(--per), #e4e953 var(--per));
 }
 
 .skills__level::after {
     content: "";
-    background-color: var(--bg-color);
+    background-color: var(--box-color);
     border: 2px solid var(--main-color);
     border-radius: 50%;
     position: absolute;
-    inset: 7px;
+    inset: 9px;
 }
 
 .skills__level span {
@@ -472,7 +467,7 @@ h1 {
 .skills__level:nth-child(6) { --per: 70%; }
 
 .skills:hover {
-    background-image: linear-gradient(0deg, #f2f2f2 70%, #ebeda2 90%, #e4e953 100%); 
+    background-image: linear-gradient(0deg, #f8f9fa 70%, #ebeda2 90%, #e4e953 100%); 
 }
 
 .about__deco-aster2 {
@@ -506,7 +501,7 @@ h1 {
 
 .about__experience {
     width: 400px; height: 400px;
-    background-color: var(--bg-color);
+    background-color: #f8f9fa;
     border: 3px solid var(--border-color);
     border-radius: var(--border-radius-m);
     padding: 0.5rem 1.5rem;
@@ -600,7 +595,6 @@ h1 {
     font-weight: var(--font-weight-600);
     letter-spacing: -0.4rem;
     text-align: center;
-    margin-bottom: var(--spacing-section);
 }
 
 .works__deco-aster {
@@ -664,6 +658,12 @@ h1 {
     border-radius: var(--border-radius-m);
     background-color: #e4e4e4;
     overflow: hidden;
+    cursor: pointer;
+}
+
+.works__content:hover {
+    border: 3px solid var(--main-color);
+    transition: border 0.2s ease;
 }
 
 
@@ -757,6 +757,7 @@ h1 {
     grid-column: 1 / 2;
     grid-row: 3 / 5;
     order: 3;
+    
 }
 
 .works__card2 {
