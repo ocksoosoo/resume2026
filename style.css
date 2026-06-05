@@ -388,8 +388,6 @@ h1 {
   background-color: var(--box-color);
   padding: 0.5rem 1rem;
   transition: var(--transition-roll-over);
-
-  animation: fadeInUp 0.7s ease-out forwards;
 }
 
 .about__box:hover {
@@ -1148,6 +1146,10 @@ footer p {
 
 .home__deco-aster {
     animation: spinStar 8s linear infinite;
+}
+
+.home__deco-aster:hover {
+    animation-play-state: paused;
 }
 
 .deco-aster {
