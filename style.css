@@ -220,11 +220,14 @@ h1 {
   border-radius: var(--border-radius-l);
   padding: 0 0.5rem;
   cursor: pointer;
+  /* roll-over */
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .hero__keyword > li:hover {
   background-color: var(--main-color);
-  transition: var(--transition-bg);
+  transform: translateZ(-2px);
+  box-shadow: 2px 3px 1px var(--border-color);
 }
 
 .hero__icons {
@@ -1122,4 +1125,5 @@ footer p {
     font-size: 1.25rem;
   }
 }
+
 
