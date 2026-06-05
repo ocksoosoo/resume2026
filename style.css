@@ -387,10 +387,19 @@ h1 {
   border-radius: var(--border-radius-m);
   background-color: var(--box-color);
   padding: 0.5rem 1rem;
+}
+
+.introduction,
+.keyword,
+.skills,
+.about__typo {
   transition: var(--transition-roll-over);
 }
 
-.about__box:hover {
+.introduction:hover,
+.keyword:hover,
+.skills:hover,
+.about__typo:hover {
     box-shadow: 4px 6px 1px var(--border-color);
     background-image: linear-gradient(
     0deg,
@@ -444,12 +453,7 @@ h1 {
   text-align: right;
   border: 3px solid var(--border-color);
   border-radius: var(--border-radius-m);
-  background-image: linear-gradient(
-    90deg,
-    #f8f9fa 0%,
-    #ebeda2 80%,
-    #e4e953 100%
-  );
+  background-image: linear-gradient(90deg, #f8f9fa 0%,#ebeda2 80%,#e4e953 100%);
   margin-bottom: var(--spacing-s);
   padding: 0.125rem 0.5rem;
 }
@@ -599,6 +603,10 @@ h1 {
   position: relative;
 }
 
+.experience__bg-card:hover {
+    transform: scale(0.7);
+}
+
 .experience__window {
   background-color: #f8f9fa;
   border: 3px solid var(--border-color);
@@ -630,7 +638,7 @@ h1 {
 }
 
 .experience__contents {
-  margin-bottom: var(--spacing-m);
+  margin-bottom: var(--spacing-s);
 }
 
 .experience-year {
