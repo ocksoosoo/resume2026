@@ -156,7 +156,7 @@ nav {
 }
 
 .nav > li {
-  font-size: var(--font-size);
+  font-size: var(--font-basic-size);
   font-weight: var(--font-weight-500);
   letter-spacing: -0.02rem;
 }
@@ -182,7 +182,6 @@ nav {
 /* main */
 #home {
   position: relative;
-  min-height: unset;
 }
 
 .hero-container {
@@ -1058,7 +1057,40 @@ footer p {
 /* 320px */
 @media (max-width: 320px) {
 
-    /* about */
+    
+
+    #home {
+        margin-bottom: 0;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        line-height: 1.3;
+    }
+
+    .hero__keyword > li {
+        font-size: 1rem;
+    }
+
+    .intro-content {
+        width: 12rem;
+        font-size: 0.8rem;
+    }
+
+    .home__icons {
+        gap: 0.5rem;
+    }
+    
+    .icons {
+        width: 35px;
+        height: 35px;
+        border-radius: var(--border-radius-s);
+    }
+
+    #about {
+        margin-top: 0;
+    }
+
     .about__title,
     .works__title-container h2 {
         font-size: 2rem;
