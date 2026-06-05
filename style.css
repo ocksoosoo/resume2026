@@ -523,14 +523,6 @@ h1 {
   --per: 40%;
 }
 
-.skills:hover {
-  background-image: linear-gradient(
-    0deg,
-    #f8f9fa 70%,
-    #ebeda2 90%,
-    #e4e953 100%
-  );
-}
 
 /* experience */
 
@@ -1073,12 +1065,48 @@ footer p {
     grid-row: 3 / 4;
     order: 6;
   }
+
+  /* animaion */
+  
+  .hero__keyword li:hover {
+    box-shadow: none;
+    background-color: var(--bg-color);
+  }
+
+    .icons:hover { background-color: #e4e4e4; }
+
+    .introduction:hover,
+    .keyword:hover,
+    .skills:hover,
+    .about__typo:hover { box-shadow: none; background-image: none; background-color: var(--box-color); }
+
+    .experience__image-side-group img:hover { box-shadow: none;}
+
+    .experience__bg-card:hover { transform: none; box-shadow: none; }
+
+    .worktogether > :first-child:hover,
+    .worktogether > :last-child:hover {
+    background-color: var(--bg-color); box-shadow: none;}
+
+  .home__icons:hover {
+    background-color: var(--bg-color);
+  }
+
+    .works__card4:hover {
+        transform-origin: center;
+        transform: none;
+    }
+
+    .works__card6:hover {
+        transform-origin: center;
+        transform: none;
+    }
+
+
 }
 
 /* 320px */
 @media (max-width: 320px) {
-
-    
 
     #home {
         margin-bottom: 0;
@@ -1142,6 +1170,43 @@ footer p {
     padding: 10% 1rem;
     font-size: 1.25rem;
   }
+
+  /* animaion */
+  
+  .hero__keyword li:hover {
+    box-shadow: none;
+    background-color: var(--bg-color);
+  }
+
+    .icons:hover { background-color: #e4e4e4; }
+
+    .introduction:hover,
+    .keyword:hover,
+    .skills:hover,
+    .about__typo:hover { box-shadow: none; background-image: none; background-color: var(--box-color); }
+
+    .experience__image-side-group img:hover { box-shadow: none;}
+
+    .experience__bg-card:hover { transform: none; box-shadow: none; }
+
+    .worktogether > :first-child:hover,
+    .worktogether > :last-child:hover {
+    background-color: var(--bg-color); box-shadow: none;}
+
+  .home__icons:hover {
+    background-color: var(--bg-color);
+  }
+
+    .works__card4:hover {
+        transform-origin: center;
+        transform: none;
+    }
+
+    .works__card6:hover {
+        transform-origin: center;
+        transform: none;
+    }
+
 }
 
 
