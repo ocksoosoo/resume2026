@@ -542,7 +542,6 @@ h1 {
 .deco-aster {
   width: 20px;
   height: 20px;
-  align-self: flex-end;
 }
 
 .deco-aster2 {
@@ -661,8 +660,9 @@ h1 {
 }
 
 .works__deco-aster {
-  width: 27px;
-  height: 27px;
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
 }
 
 .worktogether span {
@@ -1119,3 +1119,35 @@ footer p {
 }
 
 
+/* animation */
+@keyframes spinStar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.home__deco-aster {
+    animation: spinStar 8s linear infinite;
+    transform-origin: center;
+}
+
+.deco-aster {
+    animation: spinStar 6s linear infinite;
+    
+}
