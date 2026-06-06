@@ -956,7 +956,17 @@ footer p {
   }
 
   .about__left-column {
-    display: contents;
+    display: block;
+  }
+
+  .about__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .about__box {
+    width: 100%;
   }
 
   .about__container {
@@ -968,10 +978,23 @@ footer p {
       "key";
   }
 
+  .keyword__list {
+    grid-template-columns: 1fr;
+  }
+
+  .keyword__list li {
+    min-width: 0;
+    width: 100%;
+  }
+
   .about__typo,
   .deco-bar,
   .deco-aster-group {
     display: none;
+  }
+
+  .skills__level-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   /* experience */
@@ -1120,6 +1143,11 @@ footer p {
   .about__box {
     width: 100%;
   }
+
+  .skills__level-container {
+    grid-template-columns: 1fr;
+  }
+
 
   .worktogether a {
     font-size: 0.75rem;
